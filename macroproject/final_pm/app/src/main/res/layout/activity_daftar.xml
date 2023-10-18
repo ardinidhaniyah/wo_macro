@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Daftar"
+        android:textSize="40sp"
+        android:layout_marginTop="180dp"
+        android:id="@+id/textdf"
+        android:textColor="#4E4D4D"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linear3"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/textdf">
+
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#786E6E"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordDF"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#786E6E"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/confirmPassword3"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#786E6E"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        android:text="Confirm Password"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttondf"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CBEAC2F1"
+        android:fontFamily="@font/poppins"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atau"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear3"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linear1">
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:scrollbarSize="23dp"
+            android:src="@drawable/google" />
+
+        <Button
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EAE9E9"
+            android:text="Masuk dengan Google"
+            android:textColor="#4E4D4D"
+            android:id="@+id/googledf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear2">
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:scrollbarSize="23dp"
+            android:src="@drawable/logofb"/>
+
+        <Button
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EAE9E9"
+            android:text="Masuk dengan Facebook"
+            android:textColor="#4E4D4D"
+            android:id="@+id/facebookdf"/>
+    </LinearLayout>
+
+</RelativeLayout>
